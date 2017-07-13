@@ -1,6 +1,6 @@
 # CodeIgniter Backend System
 
-CodeIgniter Backend System helps you build a backend system of Codeigniter framework with a lot of powerful features.
+CodeIgniter Backend System helps you build a backend system of Codeigniter framework with a lot of powerful features. See my site [http://ci2backend.com](http://ci2backend.com)
 
 # Key features
 - [User management (ACL)](#user-management)
@@ -69,6 +69,6 @@ CodeIgniter Backend System helps you build a backend system of Codeigniter frame
 - [Documentation](http://ci2backend.com/setup.html)
 
 # Donations
-CodeIgniter Backend System has been created by [phutv](http://bpotech.com.vn/) and is currently maintained by him and his team. We highly appreciate any of your donations.
+CodeIgniter Backend System has been created by [phutv](https://plus.google.com/+vanphuTruong) and is currently maintained by him and his team. We highly appreciate any of your donations.
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FLHJAF2ECGXGQ)
