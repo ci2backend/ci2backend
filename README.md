@@ -65,6 +65,10 @@ CodeIgniter Backend System helps you build a backend system of Codeigniter frame
 - Open the browser and run www.example.com/install.php (`www.example.com` is your domain) and setup as the instruction. Make sure to pass all the required components.
 - Well done!
 
+-Username: `admin@admin.com`
+
+-Password: `password`
+
 # Configuration and documentation
 - [Documentation](http://ci2backend.com/setup.html)
 
