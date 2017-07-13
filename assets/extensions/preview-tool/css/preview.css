@@ -1,0 +1,58 @@
+.preview-tool.fixed-top {
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+
+.preview-tool {
+    background-image: url("../img/tools.png");
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: thin solid #CCC;
+    margin: 5px;
+}
+
+.preview-box .tool-box {
+    position: absolute;
+    z-index: 999999;
+    width: 20%;
+    top: 40px;
+    left: -25%;
+    -webkit-transition: left 0.5s;
+    /* Safari */
+    transition: left 0.5s;
+    color: #50607f;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    border-color: #ddd;
+    overflow: auto;
+}
+
+.preview-box .tool-box.active {
+    -webkit-transition: left 0.5s;
+    /* Safari */
+    transition: left 0.5s;
+    left: 5px;
+}
+
+.tool-box form {
+    padding: 10px;
+}
+
+.tool-box .checkbox {
+    padding: 5px;
+    color: blue;
+    font-weight: bold;
+}
+
+.extension-tool-box {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 0;
+    width: 90%;
+    margin: 10px;
+}

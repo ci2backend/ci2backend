@@ -1,0 +1,10 @@
+{
+    "name": "Jquery validation",
+    "key": "jquery-validation",
+    "description": "The jQuery Validation Plugin provides drop-in validation for your existing forms, while making all kinds of customizations to fit your application really easy.",
+    "css": [],
+    "js": [
+        "dist/jquery.validate.js",
+        "dist/additional-methods.js"
+    ]
+}

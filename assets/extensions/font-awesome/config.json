@@ -1,0 +1,7 @@
+{
+    "name": "Font Awesome v4.5",
+    "key": "font-awesome",
+    "description": "Font Awesome v4.5",
+    "css": ["font-awesome.css"],
+    "js": []
+}

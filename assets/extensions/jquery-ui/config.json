@@ -1,0 +1,11 @@
+{
+    "name": "Jquery UI 1.11.4",
+    "key": "jquey-ui",
+    "description": "Jquery UI 1.11.4",
+    "css": [
+        "themes/base/all.css"
+    ],
+    "js": [
+        "jquery-ui.min.js"
+    ]
+}

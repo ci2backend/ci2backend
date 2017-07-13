@@ -1,0 +1,7 @@
+{
+    "name": "Ajax.org Cloud9 Editor",
+    "key": "ace-builds",
+    "description": "Ace is a code editor written in JavaScript.",
+    "css": [],
+    "js": ["src-noconflict/ace.js"]
+}

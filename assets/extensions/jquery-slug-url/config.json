@@ -1,0 +1,7 @@
+{
+    "name": "Jquery slug URL",
+    "key": "jquery-slug-url",
+    "description": "Jquery slug URL",
+    "css": [],
+    "js": ["jquery.slug.js"]
+}

@@ -1,0 +1,9 @@
+a.btn {
+    margin: 0px 5px 0;
+}
+
+a.btn.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}

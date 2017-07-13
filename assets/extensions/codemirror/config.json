@@ -1,0 +1,20 @@
+{
+  "name": "CodeMirror - 5.1.1",
+  "key": "codemirror",
+  "description": "CodeMirror - 5.1.1",
+  "css": [
+    "lib/codemirror.css",
+    "theme/monokai.css"
+  ],
+  "js": [
+    "lib/codemirror.js",
+    "mode/xml/xml.js",
+    "mode/clike/clike.js",
+    "mode/javascript/javascript.js",
+    "mode/css/css.js",
+    "mode/php/php.js",
+    "mode/htmlmixed/htmlmixed.js",
+    "addon/selection/active-line.js",
+    "addon/lint/lint.js"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "uniform",
+  "version": "1.0.0",
+  "main": [
+    "jquery.uniform.min.js",
+    "css/uniform.default.min.css"
+  ],
+  "homepage": "https://github.com/duongtdvn/uniform",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.0",
+    "commit": "cae4111b09f66f56dfcf49f7d9c70abf0ceb5d0b"
+  },
+  "_source": "https://github.com/duongtdvn/uniform.git",
+  "_target": "^1.0.0",
+  "_originalSource": "jquery-uniform",
+  "_direct": true
+}

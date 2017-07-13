@@ -1,0 +1,30 @@
+{
+    "name": "System admin template",
+    "key": "sys_admin",
+    "js": {
+        "jquery.pstrength-min.1.2": "jquery.pstrength-min.1.2",
+        "thickbox": "thickbox",
+        "template-script": "script"
+    },
+    "css": {
+        "reset": "reset",
+        "grid": "grid",
+        "styles": "styles",
+        "thickbox": "thickbox",
+        "theme-blue": "theme-blue"
+    },
+    "dependencies": [
+        "jquery",
+        "bootstrap",
+        "jquery-validation",
+        "elfinder",
+        "jquery-chosen",
+        "jquery-slug-url",
+        "overlay",
+        "messi",
+        "ace-builds",
+        "bootbox",
+        "jquery.tablesearch",
+        "tablesorter"
+    ]
+}

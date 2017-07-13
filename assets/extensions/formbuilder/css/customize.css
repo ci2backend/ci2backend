@@ -1,0 +1,37 @@
+#components {
+    min-height: 600px;
+}
+
+#target {
+    min-height: 200px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+#target .component {
+    border: 1px solid #fff;
+}
+
+.form-group.component:first-child {
+    padding-top: 15px;
+}
+
+#temp {
+    width: 500px;
+    background: white;
+    border: 1px dotted #ccc;
+    border-radius: 10px;
+}
+
+.popover-content form {
+    margin: 0 auto;
+    width: 213px;
+}
+
+.popover-content form .btn {
+    margin-right: 10px
+}
+
+#source {
+    min-height: 500px;
+}

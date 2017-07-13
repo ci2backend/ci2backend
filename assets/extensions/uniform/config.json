@@ -1,0 +1,7 @@
+{
+    "name": "Uniform",
+    "key": "uniform",
+    "description": "Uniform",
+    "css": ["themes/default/css/uniform.default.css", "customize.css"],
+    "js": ["jquery.uniform.js"]
+}

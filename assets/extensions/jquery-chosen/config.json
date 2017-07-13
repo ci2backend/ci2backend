@@ -1,0 +1,7 @@
+{
+    "name": "Jquery Chosen",
+    "key": "jquery-chosen",
+    "description": "Jquery Chosen",
+    "css": ["chosen.css"],
+    "js": ["chosen.jquery.js", "script.js"]
+}

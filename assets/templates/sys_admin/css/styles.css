@@ -1,0 +1,1308 @@
+/* -------------------- Basic HTML tags -------------------- */
+
+body {
+    font: 12px/1.5 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #444444;
+}
+
+a:focus {
+    outline: 1px dotted invert;
+}
+
+hr {
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px 0 0;
+    clear: both;
+    height: 0;
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: -1.5px;
+}
+
+h2 {
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 10px;
+}
+
+ol {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+ul.bullets {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+ul.bullets li {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+    margin-bottom: 15px;
+}
+
+a,
+a:visited {
+    color: #0063be;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+h1 a,
+h1 a:visited,
+h2 a,
+h2 a:visited,
+h3 a,
+h3 a:visited,
+h4 a,
+h4 a:visited,
+h5 a,
+h5 a:visited,
+h6 a,
+h6 a:visited {
+    color: #444444;
+}
+
+h1 a:hover,
+h1 a:active,
+h2 a:hover,
+h2 a:active,
+h3 a:hover,
+h3 a:active,
+h4 a:hover,
+h4 a:active,
+h5 a:hover,
+h5 a:active,
+h6 a:hover,
+h6 a:active {
+    color: #0063be;
+}
+
+
+/* --------------------  Custom general classes -------------------- */
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.bottom-spacing {
+    margin-bottom: 20px;
+}
+
+
+/* -------------------- Page elements -------------------- */
+
+#header {
+    margin-bottom: 5px;
+}
+
+#header span.site-title {
+    color: #FFFFFF;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#header-status {
+    padding: 0;
+    color: #aaaaaa;
+    margin-bottom: 21px;
+}
+
+#text-invitation {
+    display: block;
+    float: left;
+    padding: 9px 0 11px 0;
+}
+
+#message-notification {
+    display: block;
+    float: left;
+    background: url(../img/mail-q-bg.jpg) top left no-repeat;
+    color: #6dc6e7;
+    padding: 9px 0 11px 0;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+#message-notification span {
+    color: #444444;
+    margin-right: 15px;
+    text-align: center;
+    display: block;
+    float: left;
+    width: 32px;
+}
+
+#message-notification a:hover,
+#message-notification a:active {
+    color: #ffffff;
+}
+
+a.link,
+a.link:visited {
+    display: block;
+    float: right;
+    color: #FFF;
+    padding: 9px 20px 11px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.link:hover,
+a.link:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.logout,
+a.logout:visited {
+    display: block;
+    float: right;
+    color: #FFF;
+    padding: 9px 20px 11px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.icon-logout {
+    background: url(../img/icon-logout.gif) center right no-repeat;
+}
+
+a.icon-user {
+    background: url(../img/user.gif) center right no-repeat;
+}
+
+a.icon-left-site {
+    background: url(../img/arrow.gif) center right no-repeat;
+}
+
+a.logout:hover,
+a.logout:active {
+    color: #ffffff;
+}
+
+#header-main {
+    background: #005195 url(../img/header-bg.jpg) repeat-x top left;
+    height: 96px;
+}
+
+#header-main #logo {
+    background: url(../img/logo.gif) no-repeat left 10px;
+    width: 100%;
+    height: 70px;
+}
+
+#subnav {
+    background: #ffffff url(../img/submenu-bg.gif) repeat-x bottom left;
+    height: 38px;
+}
+
+#subnav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#subnav ul li {
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 5px;
+    border-right: 1px solid rgba(204, 204, 204, 0.32);
+    margin-top: 0;
+    padding-right: 10px;
+}
+
+#subnav ul li:last-child {
+    border-right: none;
+}
+
+#subnav ul a,
+#subnav ul a:visited {
+    display: block;
+    float: left;
+    color: #0063be;
+    font-size: 14px;
+    padding: 0;
+    text-decoration: none;
+}
+
+#subnav ul a:hover,
+#subnav ul a:active {
+    text-decoration: underline;
+}
+
+#footer {
+    padding: 0;
+    color: #aaaaaa;
+    padding: 12px 0 15px 0;
+    margin-top: 30px;
+    border-top: 1px solid #cccccc;
+}
+
+
+/* -------------------- Nav tabs (sliding door technique) -------------------- */
+
+ul#nav {
+    float: left;
+    list-style: none;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+ul#nav li {
+    background: transparent url(../img/tab-left.gif) no-repeat scroll left top;
+    float: left;
+    margin: 0 5px 0 0;
+    padding: 0 0 0 9px;
+}
+
+ul#nav li a,
+ul#nav li a:visited {
+    background: transparent url(../img/tab-right.gif) no-repeat scroll right top;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    padding: 7px 15px 6px 6px;
+    text-decoration: none;
+}
+
+ul#nav li a:hover {
+    padding: 8px 15px 5px 6px;
+}
+
+ul#nav li#current {
+    /* give the id="current" to the currently selected tab */
+    background: transparent url(../img/tab-active-left.gif) no-repeat scroll left top;
+}
+
+ul#nav li#current a {
+    background: transparent url(../img/tab-active-right.gif) no-repeat scroll right top;
+    color: #444444;
+}
+
+
+/* -------------------- Box module -------------------- */
+
+div.module {
+    background: url(../img/module-body-left-bg.gif) no-repeat scroll bottom left;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div.module div.module-body {
+    background: url(../img/module-body-right-bg.gif) no-repeat scroll bottom right;
+    padding: 15px 1% 15px 1%;
+    float: left;
+    width: 100%;
+}
+
+
+/* Percentage padding in the module dependant on the cell width */
+
+.grid_6 > .grid_6 {
+    margin-left: 0;
+    margin-right: 0;
+    width: 49%;
+}
+
+.grid_6 > .grid_6:first-child {
+    margin-right: 2%;
+}
+
+.grid_1 div.module div.module-body {
+    padding: 20px 8% 20px 8%;
+    float: left;
+    /*width: 84%;*/
+}
+
+.grid_2 div.module div.module-body {
+    padding: 20px 7% 20px 7%;
+    float: left;
+    /*width: 86%;*/
+}
+
+.grid_3 div.module div.module-body {
+    padding: 20px 6% 20px 6%;
+    float: left;
+    /*width: 88%;*/
+}
+
+.grid_4 div.module div.module-body {
+    padding: 20px 5% 20px 5%;
+    float: left;
+    /*width: 90%;*/
+}
+
+.grid_5 div.module div.module-body {
+    padding: 20px 4% 20px 4%;
+    float: left;
+    /*width: 92%;*/
+}
+
+.grid_6 div.module div.module-body {
+    padding: 20px 3% 20px 3%;
+    float: left;
+    /*width: 94%;*/
+}
+
+.grid_7 div.module div.module-body {
+    padding: 20px 2.75% 20px 2.75%;
+    float: left;
+    /*width: 94.5%;*/
+}
+
+.grid_8 div.module div.module-body {
+    padding: 20px 2.5% 20px 2.5%;
+    float: left;
+    /*width: 95%;*/
+}
+
+.grid_9 div.module div.module-body {
+    padding: 20px 2.25% 20px 2.25%;
+    float: left;
+    /*width: 95.5%;*/
+}
+
+.grid_10 div.module div.module-body {
+    padding: 20px 2% 20px 2%;
+    float: left;
+    /*width: 96%;*/
+}
+
+.grid_11 div.module div.module-body {
+    padding: 20px 1.75% 20px 1.75%;
+    float: left;
+    /*width: 96.5%;*/
+}
+
+.grid_12 div.module div.module-body {
+    padding: 10px 0.5% 10px 0.5%;
+    float: left;
+    /*width: 100%;*/
+}
+
+div.module div.module-table-body-background {
+    background: url(../img/module-body-right-bg.gif) no-repeat scroll bottom right;
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+
+div.module > h2 {
+    /* Sliding right image */
+    background: url(../img/module-header-left-bg.gif) no-repeat scroll top left;
+    display: block;
+    float: left;
+    height: 32px;
+    /* CHANGE THIS VALUE ACCORDING TO IMAGE HEIGHT */
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    /* CHENGE THIS VALUE ACCORDING TO RIGHT IMAGE WIDTH */
+    /* FONT PROPERTIES */
+    text-decoration: none;
+    color: #444444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 0;
+    letter-spacing: normal
+}
+
+div.module h2 span {
+    /* Background left image */
+    background: url(../img/module-header-right-bg.gif) no-repeat top right;
+    display: block;
+    line-height: 20px;
+    /* CHANGE THIS VALUE ACCORDING TO BUTTONG HEIGHT */
+    padding: 7px 0 5px 18px;
+}
+
+div.module table {
+    width: 100%;
+    margin: 0 0 10px 0;
+    border-left: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+div.module table.tr {
+    border-collapse: separate;
+    border-right: 1px solid #aaaaaa;
+    border-left: 1px solid #aaaaaa;
+}
+
+div.module table th {
+    background-color: #eeeeee;
+    color: #444444;
+    padding: 5px;
+    text-align: left;
+    border-right: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+div.module table td {
+    background-color: #ffffff;
+    padding: 5px;
+    ;
+    border-right: 1px solid #d9d9d9;
+}
+
+div.module table tr.odd td {
+    /* You can use this style if you want to do zebra-colored tables with other technique than Table Sorter script used here */
+    background-color: #f1f5fa;
+}
+
+.table-apply {
+    width: 40%;
+    float: right;
+    text-align: right;
+    margin-right: 15px;
+}
+
+
+/* -------------------- Pager -------------------- */
+
+.pager {
+    display: block;
+    padding: 0px 10px 10px 10px;
+    width: 40%;
+    float: left;
+}
+
+.pager .first,
+.pager .prev,
+.pager .next,
+.pager .last {
+    margin-bottom: -2px;
+}
+
+
+/* -------------------- Button (sliding door technique) -------------------- */
+
+
+/* button outside a module box */
+
+a.button {
+    /* Sliding right image */
+    background: transparent url(../img/button-right-bg-m.gif) no-repeat scroll top right;
+    display: block;
+    float: left;
+    height: 26px;
+    /* CHANGE THIS VALUE ACCORDING TO IMAGE HEIGHT */
+    padding-right: 11px;
+    /* CHENGE THIS VALUE ACCORDING TO RIGHT IMAGE WIDTH */
+    /* FONT PROPERTIES */
+    text-decoration: none;
+    color: #444444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+a.button span {
+    /* Background left image */
+    background: transparent url(../img/button-left-bg-m.gif) no-repeat top left;
+    display: block;
+    line-height: 15px;
+    /* CHANGE THIS VALUE ACCORDING TO BUTTONG HEIGHT */
+    padding: 4px 0 7px 10px;
+}
+
+a.button:hover {
+    background-position: bottom right;
+    color: #0063be;
+}
+
+a.button:hover span {
+    background-position: bottom left;
+    color: #0063be;
+}
+
+
+/* button inside a module box */
+
+div.module a.button {
+    /* Sliding right image */
+    background: transparent url(../img/button-right-bg.gif) no-repeat scroll top right;
+    display: block;
+    float: left;
+    height: 26px;
+    /* CHANGE THIS VALUE ACCORDING TO IMAGE HEIGHT */
+    padding-right: 11px;
+    /* CHENGE THIS VALUE ACCORDING TO RIGHT IMAGE WIDTH */
+    /* FONT PROPERTIES */
+    text-decoration: none;
+    color: #444444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+div.module a.button span {
+    background: transparent url(../img/button-left-bg.gif) no-repeat top left;
+    display: block;
+    line-height: 15px;
+    /* CHANGE THIS VALUE ACCORDING TO BUTTONG HEIGHT */
+    padding: 4px 0 7px 10px;
+}
+
+
+/* -------------------- Pagination -------------------- */
+
+.pagination {
+    margin-bottom: 20px;
+    float: right;
+}
+
+.pagination a.button {
+    margin-right: 10px;
+}
+
+.pagination a.last {
+    margin-right: 0;
+}
+
+.pagination .numbers {
+    float: left;
+    padding-top: 3px;
+    margin-right: 15px;
+}
+
+.pagination .numbers span {
+    padding: 0 5px 0 5px;
+}
+
+.pagination .current {
+    font-weight: bold;
+}
+
+
+/* -------------------- Forms -------------------- */
+
+fieldset {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+legend {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-short,
+.input-medium,
+.input-long {
+    padding: 3px;
+}
+
+select {
+    padding: 2px;
+}
+
+textarea {
+    padding: 3px;
+}
+
+.input-short {
+    width: 25%
+}
+
+.input-medium {
+    width: 50%
+}
+
+.input-long {
+    width: 100%;
+}
+
+div.selector select.input-long.extra {
+    width: 100%
+}
+
+select.input-long.extra {
+    width: 100%
+}
+
+.input-long.extra {
+    width: 100%
+}
+
+input.input-short,
+input.input-medium,
+input.input-long,
+select,
+textarea {
+    background: url(../img/input-bg.gif) top left repeat-x #f6f6f6;
+    border: 0;
+    border: 1px solid #cccccc;
+}
+
+input.input-short:focus,
+input.input-medium:focus,
+input.input-long:focus,
+select:focus,
+textarea:focus {
+    background: url(../img/input-bg-focus.gif) top left repeat-x #ffffff;
+    border-color: #a9c2d1;
+}
+
+input.submit-green {
+    background: url(../img/submit-green-bg.gif) top left repeat-x;
+    border: 0;
+    border-top: 1px solid #6bd091;
+    border-left: 1px solid #6bd091;
+    border-right: 1px solid #349c5c;
+    border-bottom: 1px solid #349c5c;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 2px 12px;
+    margin: 0px 10px 0 0;
+    cursor: pointer;
+}
+
+input.submit-green-hover {
+    background-image: url(../img/submit-green-bg-hover.gif);
+}
+
+input.submit-gray {
+    background: url(../img/submit-gray-bg.gif) top left repeat-x;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 2px 12px;
+    margin: 0px 10px 0 0;
+    cursor: pointer;
+}
+
+input.submit-gray-hover {
+    background-image: url(../img/submit-gray-bg-hover.gif);
+}
+
+
+/* -------------------- Text input and select input notifications -------------------- */
+
+.notification-input {
+    background: 10px 50% no-repeat;
+    margin: 0 0 0 5px;
+    padding: 5px 0 5px 32px;
+    font-size: 12px;
+}
+
+.ni-correct {
+    background-image: url(../img/tick-on-white.gif);
+    color: #00ae42;
+}
+
+.ni-error {
+    background-image: url(../img/cross-on-white.gif);
+    color: #c9282d;
+}
+
+
+/* --------------------  Boxed notifications -------------------- */
+
+.notification {
+    display: block;
+    padding: 20px 20px 20px 45px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+}
+
+.n-success {
+    background-color: #a3e6bd;
+    border-color: #68d59b;
+    background-image: url(../img/notification-tick.gif);
+}
+
+.n-information {
+    background-color: #9fddea;
+    border-color: #5fceea;
+    background-image: url(../img/notification-information.gif);
+}
+
+.n-attention {
+    background-color: #f9e497;
+    border-color: #ffcb4f;
+    background-image: url(../img/notification-exclamation.gif);
+}
+
+.n-error {
+    background-color: #ffc6ca;
+    border-color: #efb9c3;
+    background-image: url(../img/notification-slash.gif);
+}
+
+
+/* -------------------- Indicators -------------------- */
+
+.indicator {
+    width: 220px;
+    height: 12px;
+    background: url(../img/indicator-bg.gif) no-repeat top left;
+}
+
+.indicator div {
+    height: 12px;
+    background: url(../img/indicator-green-to-red.gif) no-repeat top left;
+}
+
+.indicator div.reverse {
+    background: url(../img/indicator-red-to-green.gif) no-repeat top left;
+}
+
+
+/* -------------------- Category list -------------------- */
+
+a.removable,
+a.removable:visited {
+    padding: 5px 18px 5px 0px;
+}
+
+a.removable:hover,
+a.removable:active {
+    background: url(../img/cross-small.gif) no-repeat center right;
+}
+
+
+/* -------------------- To-do list -------------------- */
+
+a.checkable,
+a.checkable:visited {
+    padding: 5px 18px 5px 0px;
+}
+
+a.checkable:hover,
+a.checkable:active {
+    background: url(../img/tick-small.gif) no-repeat center right;
+}
+
+a.completed,
+a.completed:visited {
+    color: #aaaaaa;
+}
+
+
+/* -------------------- Messages -------------------- */
+
+.separated {
+    border-top: 1px solid #cccccc;
+    padding-top: 15px;
+}
+
+.user {
+    display: block;
+    padding-left: 22px;
+    background: url(../img/user.gif) left 50% no-repeat;
+    font-size: 14px;
+    color: #666666;
+    font-weight: normal;
+}
+
+.user-female {
+    display: block;
+    padding-left: 22px;
+    background: url(../img/user-female.gif) left 50% no-repeat;
+    font-size: 14px;
+    color: #666666;
+    font-weight: normal;
+}
+
+.reply {
+    padding-left: 20px;
+    background: url(../img/arrow-curve-180-left.gif) left 50% no-repeat;
+    margin-right: 7px;
+}
+
+.forward {
+    padding-left: 20px;
+    background: url(../img/arrow-curve-000-left.gif/) left 50% no-repeat;
+    margin-right: 7px;
+}
+
+a.delete,
+a.delete:visited {
+    padding-left: 16px;
+    background: url(../img/cross-small.gif) left 50% no-repeat;
+    color: #C00;
+}
+
+h3.mail {
+    display: block;
+    padding: 20px 0px 20px 70px;
+    background: url(../img/Crystal_Project_mail_open.gif) left 50% no-repeat;
+}
+
+#p-messages {
+    padding: 20px;
+}
+
+
+/* -------------------- Login page -------------------- */
+
+form.login {
+    background: url(../img/Crystal_Clear_locked.gif) 87% 10px no-repeat;
+}
+
+
+/* -------------------- Dashboard -------------------- */
+
+a.dashboard-module,
+a.dashboard-module:visited {
+    width: 95px;
+    height: 95px;
+    display: block;
+    float: left;
+    background: url(../img/module.gif) top left no-repeat;
+    margin: 0px 4px 8px 8px;
+    text-align: center;
+    color: #444444;
+    text-align: center;
+    background-size: 100%;
+    font-weight: bold;
+}
+
+a.dashboard-module:hover,
+a.dashboard-module:active {
+    width: 95px;
+    height: 95px;
+    background: url(../img/module-active.gif) top left no-repeat;
+    text-decoration: none;
+    color: #0063be;
+    background-size: 100%;
+}
+
+a.dashboard-module img {
+    margin-top: 10%;
+    width: 50%;
+}
+
+a.dashboard-module span {
+    margin-top: 10%;
+    display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+    a.dashboard-module,
+    a.dashboard-module:visited {
+        width: 95px;
+        height: 95px;
+        background-size: 100% 100%;
+        margin: 4px;
+    }
+    a.dashboard-module span {
+        margin-top: 0;
+        display: block;
+        font-size: 0.8em;
+    }
+    .pagedisplay.input-short {
+        width: 25%;
+    }
+}
+
+.center_div {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+form.center {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.indicator {
+    background: url(../img/indicator-bg.gif) no-repeat scroll left top rgba(0, 0, 0, 0);
+    height: 12px;
+    width: 78%;
+    float: left;
+    margin-top: 2% !important;
+}
+
+.input-medium.password {
+    float: left;
+}
+
+.pstrength-info {
+    display: inline-block;
+    width: 100%;
+}
+
+.mrbot0px {
+    margin-bottom: 0 !important;
+}
+
+.user-info {
+    padding: 10px;
+}
+
+#ace_settingsmenu,
+#kbshortcutmenu {
+    width: 35%;
+    height: 621px;
+}
+
+.panel,
+.panel-heading {
+    border-radius: 0px;
+    display: block;
+    margin-top: 0;
+    border: thin solid #CCC;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.nav.nav-tabs li {
+    cursor: pointer;
+}
+
+select.form-control {
+    width: 96%;
+}
+
+ul#myTab {
+    margin-bottom: 0;
+}
+
+.tab-content {
+    border: thin solid #CCC;
+    border-top: none;
+}
+
+.grid {
+    padding: 10px;
+}
+
+.lb-input {
+    display: inline-block;
+}
+
+.lb-input select {
+    width: 100%;
+    min-width: 200px;
+}
+
+.pager .first,
+.pager .last,
+.pager .next,
+.pager .prev,
+.delete-rows,
+.add-new-rows {
+    cursor: pointer;
+}
+
+.table.table-hover tr td {
+    text-align: center;
+}
+
+.table-hover tbody tr.new-row>td,
+.table-hover tbody tr.new-row>th {
+    background-color: #CCC;
+}
+
+.action-row-group {
+    display: inline-block;
+    float: right;
+}
+
+.tab-content>.active {
+    display: inline-block;
+    width: 100%;
+}
+
+.panel.panel-info {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.search-input {
+    width: 65%;
+    padding-left: 5px;
+}
+
+.panel.panel-info {
+    margin: 10px 0 10px 0;
+}
+
+form.panel.panel-parent {
+    margin: 10px 0px 7px;
+    padding: 0px 10px 0px;
+}
+
+form.panel-parent .form-group {
+    margin: 10px 0 10px;
+}
+
+
+/*form[role="form"] {
+    padding: 10px 20px 10px;
+}*/
+
+#login .input-long {
+    width: 78%;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.delete_action {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.modal-title .label {
+    font-size: 1em;
+}
+
+label.error {
+    color: red !important;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.zero-opacity {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.container_12.full-dimensions {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.force-text-center {
+    text-align: center !important;
+}
+
+.red {
+    color: red;
+}
+
+.border-thin {
+    border: thin solid #CCCCCC;
+    padding: 10px;
+}
+
+.form-group {
+    padding-bottom: 10px;
+}
+
+legend {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.block {
+    display: block;
+}
+
+#infoMessage {
+    color: red;
+}
+
+.grid legend {
+    color: dodgerblue;
+}
+
+.border {
+    border: thin solid #CCC;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.border-no-top {
+    border: thin solid #CCC;
+    border-top: none;
+}
+
+.border-no-bottom {
+    border: thin solid #CCC;
+    border-bottom: none;
+}
+
+.border-no-left {
+    border: thin solid #CCC;
+    border-left: none;
+}
+
+.border-no-right {
+    border: thin solid #CCC;
+    border-right: none;
+}
+
+th.text-center .tablesorter-header-inner {
+    text-align: center;
+}
+
+.module-body #pager.pager {
+    position: static !important;
+    padding: 0px 10px 10px 15px;
+    margin: 0;
+}
+
+div.module .table > thead > tr > th.text-center {
+    text-align: center;
+}
+
+input.uniform-input,
+select.uniform-multiselect,
+textarea.uniform {
+    padding-left: 12px !important;
+    font-size: 14px !important;
+}
+
+span.label.inline-block {
+    width: 100%;
+    display: inline-block;
+}
+
+
+/* Constant defined Setting page */
+
+#uniform-btn_create_constant {
+    float: right;
+    position: relative;
+    bottom: 55px;
+}
+
+.table-tool a {
+    padding: 2px 10px 2px 10px;
+    border: thin solid #CCC;
+    display: inline-block;
+    margin: 1px 5px 1px 5px;
+}
+
+.table-tool a.delete_action {
+    color: red;
+}
+
+.table-tool a.preview {
+    color: cornflowerblue;
+}
+
+.table-tool a:hover {
+    background-color: steelblue;
+}
+
+#editor {
+    max-height: 450px;
+}
+
+.tab-content {
+    border: thin solid #CCC;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    border-top: none;
+    padding-bottom: 10px;
+}
+
+.CodeMirror.cm-s-default {
+    font-family: monospace;
+    height: 450px;
+    color: black;
+    overflow: auto;
+}
+
+div.elfinder div.elfinder-dialog {
+    width: 75% !important;
+    max-height: 550px;
+    overflow: hidden;
+}
+
+.grid_4.text-right.pull-right.grid.table-search {
+    margin-right: 0;
+    padding-right: 0;
+}

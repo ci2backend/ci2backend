@@ -1,0 +1,7 @@
+{
+    "name": "Bootbox",
+    "key": "bootbox",
+    "description": "Bootbox - Bootstrap powered alert, confirm and flexible dialog boxes",
+    "css": [],
+    "js": ["bootbox.js"]
+}

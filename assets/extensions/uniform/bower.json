@@ -1,0 +1,5 @@
+{
+  "name": "uniform",
+  "version": "1.0.1",
+  "main": ["jquery.uniform.min.js", "css/uniform.default.min.css"]
+}

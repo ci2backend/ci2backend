@@ -1,0 +1,16 @@
+{
+    "name": "web",
+    "js": [
+        "scripts"
+    ],
+    "css": [
+        "main",
+        "customize"
+    ],
+    "dependencies": [
+        "jquery",
+        "bootstrap",
+        "overlay",
+        "messi"
+    ]
+}

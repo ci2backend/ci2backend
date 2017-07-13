@@ -1,0 +1,7 @@
+{
+    "name": "Overlay",
+    "key": "overlay",
+    "description": "Overlay",
+    "css": ["overlay.css"],
+    "js": ["overlay.js"]
+}

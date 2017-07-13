@@ -1,0 +1,27 @@
+div.selector span {
+    text-align: center;
+}
+
+div.button span {
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    margin-left: 5px;
+}
+
+div.button a.uniform,
+div.button button.uniform,
+div.button input.uniform {
+    display: none !important;
+}
+div.button span {
+        padding: 5px 15px 0 10px;
+}
+select.uniform.input-long {
+    width: 90%;
+}
+
+div.radio label, div.checkbox label {
+    margin-left: 0; 
+}

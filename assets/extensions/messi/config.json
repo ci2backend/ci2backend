@@ -1,0 +1,10 @@
+{
+    "name": "Messi Notify",
+    "key": "messi",
+    "description": "Messi Notify",
+    "css": ["messi.css", "modal.css", "customize.css"],
+    "js": ["messi.js", "modal.js", "script.js"],
+    "dependencies": [
+    	"overlay"
+    ]
+}

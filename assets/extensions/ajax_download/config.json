@@ -1,0 +1,10 @@
+{
+    "name": "Form Post Download",
+    "key": "ajax_download",
+    "description": "Form Post Download",
+    "css": [],
+    "js": [
+    	"jQuery.download.js",
+    	"scripts.js"
+    ]
+}

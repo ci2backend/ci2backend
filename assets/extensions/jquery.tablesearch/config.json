@@ -1,0 +1,7 @@
+{
+    "name": "TableSearch Plugin",
+    "key": "jquery.tablesearch",
+    "description": "A jQuery plugin for a quick search in big tables. Will display only the line that matchs the query and hightlight the terms in the line",
+    "css": [],
+    "js": ["jquery.tablesearch.js"]
+}

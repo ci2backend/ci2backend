@@ -1,0 +1,17 @@
+{  
+   "name":"elFinder 2.1",
+   "key":"elfinder",
+   "description":"elFinder file manager for web",
+   "css":[  
+      "elfinder.min.css",
+      "theme.css"
+   ],
+   "js":[  
+      "elfinder.min.js",
+      "scripts.js"
+   ],
+   "dependencies": [
+   	  "jquery-ui",
+        "codemirror"
+   ]
+}

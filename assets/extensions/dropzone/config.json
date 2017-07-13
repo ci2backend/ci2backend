@@ -1,0 +1,7 @@
+{
+    "name": "DropZone Upload File",
+    "key": "dropzone",
+    "description": "DropZone Upload File",
+    "css": ["dropzone.css"],
+    "js": ["dropzone.js"]
+}

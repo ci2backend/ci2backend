@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-shadow: none;
+    background: #FFFFFF;
+    padding: 0px;
+}
+
+
+/*  Start popup     */
+
+.tooltip .tooltip-inner {
+    border: medium none !important;
+    margin-top: 0px !important;
+}
+
+.tooltip-inner {
+    padding: 5px !important;
+}
+
+.tooltip.bottom {
+    margin-top: 0 !important;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    top: 0 !important;
+}
+
+
+/*End button popup      */
+
+.pointer {
+    cursor: pointer;
+}
+
+ul.breadcrumb {
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    list-style: none;
+    background-color: #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.panel-padding {
+    border: thin solid #CCC !important;
+    margin-top: 15px !important;
+    display: inline-block;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+div.radio + .radio,
+div.checkbox + .checkbox {
+    margin-top: 10px !important;
+}
+
+div.radio label,
+div.checkbox label {
+    margin-left: 25px;
+}
+
+ul.breadcrumb > li {
+    display: inline;
+}
+
+ul.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}

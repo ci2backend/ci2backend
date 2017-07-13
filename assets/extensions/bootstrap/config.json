@@ -1,0 +1,7 @@
+{
+    "name": "Bootstrap 3.3.7",
+    "key": "bootstrap",
+    "description": "Bootstrap 3.3.7",
+    "css": ["dist/css/bootstrap.css"],
+    "js": ["dist/js/bootstrap.js"]
+}

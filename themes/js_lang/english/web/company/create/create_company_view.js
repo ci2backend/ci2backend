@@ -1,0 +1,1 @@
+lang['title'] = 'Create company';

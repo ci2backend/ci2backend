@@ -1,0 +1,7 @@
+{
+    "name": "Preview tool",
+    "key": "preview-tool",
+    "description": "Preview tool",
+    "css": ["preview.css"],
+    "js": ["preview.js"]
+}
