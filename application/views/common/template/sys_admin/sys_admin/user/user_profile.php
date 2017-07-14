@@ -107,7 +107,7 @@
                     ?>
             <?php endif ?>
 
-            <?php echo form_hidden('id', @$user->id);?>
+            <?php echo form_hidden('id', $user['id']);?>
 
             <?php echo form_hidden(@$csrf); ?>
 

@@ -238,7 +238,16 @@ if ( ! function_exists('form_ajax')) {
 
 		}
 
-		$ajax_action = $CI->config->site_url('ajax.html');
+		if (in_array('mod_rewrite', apache_get_modules())) {
+
+			$ajax_action = $CI->config->base_url('ajax.html');
+
+		}
+		else {
+
+			$ajax_action = $CI->config->site_url('ajax.html');
+
+		}
 
 		$ajax_input = $action;
 
@@ -246,6 +255,17 @@ if ( ! function_exists('form_ajax')) {
 		if ($action && strpos($action, '://') === FALSE) {
 
 			$action = $CI->config->site_url($action);
+
+			if (in_array('mod_rewrite', apache_get_modules())) {
+
+				$action = $CI->config->base_url($action);
+
+			}
+			else {
+
+				$action = $CI->config->site_url($action);
+
+			}
 
 		}
 

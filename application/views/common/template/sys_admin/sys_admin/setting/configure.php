@@ -1,7 +1,7 @@
 <div class="grid_12 grid panel-padding">
+	
+	<?php echo form_ajax('dev/system_configure'); ?>
 
-	<form action="<?php echo site_url('dev/form_ajax'); ?>" method="POST" role="form" class="ajax validate">
-		
 		<div class="grid_6 grid">
 
 			<legend><?php echo lang('Configure_system'); ?></legend>
