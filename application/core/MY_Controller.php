@@ -2673,6 +2673,12 @@ class MY_Controller extends CI_Controller {
     public function set_referrer()
     {
 
+        if (strpos($this->uri->uri_string, 'install.php' !== false)) {
+
+            return true;
+
+        }
+
         $this->load->library('user_agent');  // load user agent library
 
         if (!in_array($this->uri->rsegments[2], array(
