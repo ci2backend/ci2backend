@@ -123,7 +123,11 @@ class Breadcrumbs
             // construct output
             foreach ($this->breadcrumbs as $key => $crumb) {
 
-                if (end(array_keys($this->breadcrumbs)) == $key) {
+                $crumbs = array_keys($this->breadcrumbs);
+
+                $breadcrumbs = end($crumbs);
+
+                if ($breadcrumbs == $key) {
 
                     $output .= $this->crumb_last_open . '' . $crumb['page'] . '' . $end_bre . $this->crumb_close;
 
