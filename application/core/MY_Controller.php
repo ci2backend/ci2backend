@@ -2357,7 +2357,9 @@ class MY_Controller extends CI_Controller {
 
         if ($class_name) {
 
-            $class_control = end(explode('/', $class_name));
+            //$class_control = end(explode('/', $class_name));
+            $cl = explode('/', $class_name);
+            $class_control = end($cl);
 
             if ($class_control != $this->router->class) {
 
