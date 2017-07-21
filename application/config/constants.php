@@ -53,28 +53,28 @@ define('ERROR_CLASS',		'error');
 
 define('WARNING_CLASS',		'warning');
 
-define('ADMIN_MAIL','no-reply@only24h.com');
+define('ADMIN_MAIL','');
 
-define('USERNAME','no-reply@only24h.com');
+define('USERNAME','');
 
-define('PASSWORD','BPOTech@123456');
+define('PASSWORD','');
 
-define('FROM_NAME', 'Only24h.com');
+define('FROM_NAME', '');
 
 
-define('ADMIN_MAIL_CONTACT','contact@only24h.com');
+define('ADMIN_MAIL_CONTACT','');
 
-define('USERNAME_CONTACT','contact@only24h.com');
+define('USERNAME_CONTACT','');
 
-define('PASSWORD_CONTACT','BPOTech@123456');
+define('PASSWORD_CONTACT','');
 
-define('FROM_NAME_CONTACT', 'Contact from Only24h.com');
+define('FROM_NAME_CONTACT', '');
 
-define('SUBJECT', 'You received a link share file from your friend');
+define('SUBJECT', '');
 
-define('HOST_MAIL','smtp.yandex.com');
+define('HOST_MAIL','');
 
-define('PORT', 465);
+define('PORT', 25);
 
 define('ALT_BODY_FORGOT_ID', 'This email is feedback requirements reminiscent username');
 
@@ -92,7 +92,7 @@ define('PREFIX_SUB_PAGE', ' | ');
 
 define('RECIEVED_KENNEL', 'my_notifications');
 
-define('NODE_URL', 'http://bpotech.com.vn:8125');
+define('NODE_URL', 'http://localhost:8125');
 
 define('TIMEOUT_SECURITY_CODE', 'error:000');
 
