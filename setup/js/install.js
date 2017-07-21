@@ -76,11 +76,6 @@ $(document).ready(function() {
                 required: true,
                 alphanumeric: true,
             },
-            'db[default][dbprefix]': {
-                required: false,
-                minlength: 2,
-                alphanumeric: true
-            },
             'db[default][hostname]': {
                 required: true,
                 hostname: true

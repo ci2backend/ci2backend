@@ -72,7 +72,7 @@
 								array(
 									'type' => 'version',
 									'name' => phpversion(), 
-									'value' => version_compare(phpversion(),'5.1.6'), 
+									'value' => version_compare(phpversion(), '5.1.6'), 
 								),
 								// check PHP required modules
 								array(
@@ -270,11 +270,6 @@
 									 		<div class="form-group">
 									 			<label for="">Database name: </label>
 									 			<input type="text" name="db[default][database]" value="<?php echo @$db['default']['database']; ?>" class="form-control" id="" placeholder="Enter database name">
-									 		</div>
-
-									 		<div class="form-group">
-									 			<label for="">Database prefix: </label>
-									 			<input type="text" name="db[default][dbprefix]" value="<?php echo @$db['default']['dbprefix']; ?>" class="form-control" id="" placeholder="Enter database prefix">
 									 		</div>
 
 								 		</div>
