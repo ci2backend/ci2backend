@@ -98,6 +98,11 @@
 								//check folder permission
 								array(
 									'type' => 'directory',
+									'name' => 'root', 
+									'value' => is_writable('./'), 
+								),
+								array(
+									'type' => 'directory',
 									'name' => '/temp', 
 									'value' => is_writable('./temp'), 
 								),
@@ -105,6 +110,11 @@
 									'type' => 'directory',
 									'name' => '/database', 
 									'value' => is_writable('./database'), 
+								),
+								array(
+									'type' => 'directory',
+									'name' => '/application/config', 
+									'value' => is_writable('./application/config'), 
 								)
 							);
 
