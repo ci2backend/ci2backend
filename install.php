@@ -63,6 +63,18 @@
 
 						<?php
 
+						if (detectCGI()) {
+							
+							?>
+
+							<strong>You are using CGI PHP. Please create .htaccess file in root directory with content below:</strong>
+
+							<pre>&lt;IfModule mod_rewrite.c&gt;<br>&nbsp;RewriteEngine on<br>&nbsp;RewriteCond %{REQUEST_FILENAME} !-f<br>&nbsp;RewriteCond %{REQUEST_FILENAME} !-d<br>&nbsp;RewriteRule ^(.*)$ index.php/$1 [L,QSA]<br>&lt;/IfModule&gt;</pre>
+
+							<?php
+
+						} else {
+
 							$enabledPhpModule = apache_get_modules();
 
 							$modRewrite = in_array('mod_rewrite', $enabledPhpModule);
@@ -160,6 +172,8 @@
 
 							}
 
+						}
+
 						?>
 
 						</ul>
@@ -213,20 +227,30 @@
 
 						 				<?php 
 
-						 					if (!$modRewrite) {
+						 					if (isset($modRewrite) && !$modRewrite) {
 
 						 						echo '<p class="text-danger"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>mod_rewrite</strong> module needs to be enabled to use these options below</p>';
 
 						 					}
 
+						 					if (detectCGI()) {
+						 						
+						 						$checkModRewrite = true;
+
+						 					} else {
+						 						
+						 						$checkModRewrite = false;
+
+						 					}
+
 						 				?>
 						 				
-						 				<fieldset <?php echo $modRewrite ? '' : 'disabled'; ?> >
+						 				<fieldset <?php echo (isset($modRewrite) && $modRewrite) ? '' : 'disabled'; ?>>
 						 					
 									 		<div class="form-group">
 									 			<div class="checkbox">
 									 				<label>
-									 					<input type="checkbox" name="global[htaccess][value]" value="1">
+									 					<input type="checkbox" name="global[htaccess][value]" value="1" <?php echo $checkModRewrite ? 'checked disabled' : ''; ?>>
 									 					Enable .htaccess
 									 				</label>
 									 			</div>

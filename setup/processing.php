@@ -54,7 +54,7 @@ if (isset($_POST['setup-system'])) {
 		}
 	}
 	$success = 0;
-	if (isset($_POST['global']['htaccess']['value']) && $_POST['global']['htaccess']['value'] == 1) {
+	if (detectCGI() == false && isset($_POST['global']['htaccess']['value']) && $_POST['global']['htaccess']['value'] == 1) {
 		$result = file_put_contents('../.htaccess', @file_get_contents('../.htaccess.default')); /* over write original with changes made */
 		if ($result) {
 			array_push($responseData['message'], array(
@@ -72,7 +72,7 @@ if (isset($_POST['setup-system'])) {
 		}
 	}
 	if (isset($_POST['global'])) {
-		if (isset($_POST['global']['htpassword']['value']) && $_POST['global']['htpassword']['value'] == 1) {
+		if (detectCGI() == false && isset($_POST['global']['htpassword']['value']) && $_POST['global']['htpassword']['value'] == 1) {
 			@file_put_contents('../.htpasswd', $_POST['global']['htpassword']['content']); /* over write original with changes made */
 			if (is_file(('../.htpasswd'))) {
 				array_push($responseData['message'], "Create .htpasswd file successfully");
@@ -266,6 +266,20 @@ function hostname(){
 	    $pageURL .= $_SERVER["SERVER_NAME"];
 	}
 	return $pageURL;
+}
+
+function detectCGI() {
+
+	if (strpos(PHP_SAPI, 'cgi') !== FALSE) {
+		
+	    return true;
+	    
+	} else {
+
+	    return false;
+	    
+	}
+
 }
 
 ?>
