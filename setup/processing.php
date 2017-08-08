@@ -35,7 +35,8 @@ if (isset($_POST['setup-system'])) {
 		$username = @$_POST['db']['default']['username'];
 		$password = @$_POST['db']['default']['password'];
 		$dbname = @$_POST['db']['default']['database'];
-		$db = new mysqli($server, $username, $password, $dbname);
+		$port = @$_POST['db']['default']['port'];
+		$db = new mysqli($server, $username, $password, $dbname, $port);
 		if (mysqli_connect_errno()) {
 			$responseData['error'] = 1;
 			array_push($responseData['message'], array(

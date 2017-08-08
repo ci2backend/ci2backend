@@ -305,6 +305,11 @@
 									 			<label for="">Database name: </label>
 									 			<input type="text" name="db[default][database]" value="<?php echo @$db['default']['database']; ?>" class="form-control" id="" placeholder="Enter database name">
 									 		</div>
+									 		
+									 		<div class="form-group">
+									 			<label for="">Port: </label>
+									 			<input type="text" name="db[default][port]" value="<?php echo isset($db['default']['port']) ? $db['default']['port'] : 3306; ?>" class="form-control" id="" placeholder="Enter port">
+									 		</div>
 
 								 		</div>
 
