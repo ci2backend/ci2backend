@@ -28,7 +28,7 @@
         
     <script type="text/javascript">
 
-        APP_BASE_URL = "<?php echo my_base_url(); ?>";
+        APP_BASE_URL = "<?php echo base_url(); ?>";
 
     </script>
         

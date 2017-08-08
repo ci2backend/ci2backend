@@ -67,7 +67,7 @@
         });
 
 		$('.onchange_this').change(function () {
-			window.location.href = APP_BASE_URL + 'languages/compare/<?php echo $path ?>' + '/' + this.value;
+			window.location.href = APP_BASE_URL + 'index.php/languages/compare/<?php echo $path ?>' + '/' + this.value;
 		});
 
 		valid.submitHandler = function(form) {

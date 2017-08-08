@@ -61,7 +61,7 @@
     <?php echo $content_css; ?>
 
     <script type="text/javascript">
-        APP_BASE_URL = '<?php echo my_base_url(); ?>';
+        APP_BASE_URL = '<?php echo base_url(); ?>';
     </script>
 
     <script src="<?php echo base_url('themes/common/js');?>/jsconfig.js"></script>

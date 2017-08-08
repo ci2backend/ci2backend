@@ -362,7 +362,7 @@ function check_access(result) {
 
             if (time_check <= 0) {
 
-                window.location.href = APP_BASE_URL + "login.html";
+                window.location.href = APP_BASE_URL + "index.php/login.html";
 
             };
 
@@ -774,13 +774,13 @@ function show_error_session_expire() {
 
     $(".messi-box button#confirm").click(function () {
 
-        window.location.href = APP_BASE_URL + "login.html";
+        window.location.href = APP_BASE_URL + "index.php/login.html";
 
     });
 
     setTimeout(function() {
 
-        window.location.href = APP_BASE_URL + "login.html";
+        window.location.href = APP_BASE_URL + "index.php/login.html";
 
     }, 10000);
 

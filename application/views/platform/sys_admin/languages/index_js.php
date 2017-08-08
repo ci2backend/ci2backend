@@ -26,7 +26,7 @@
 
 		key_platform = $('select#key_platform').val();
 
-		window.location.href = APP_BASE_URL + 'languages/index' + '/' + key_default + '/' + key_platform + '/' + key_language;
+		window.location.href = APP_BASE_URL + 'index.php/languages/index' + '/' + key_default + '/' + key_platform + '/' + key_language;
 
 	}
 </script>
