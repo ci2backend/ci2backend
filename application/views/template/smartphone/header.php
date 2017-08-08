@@ -10,7 +10,7 @@
 
     <meta property="og:type" content="article" />
 
-    <meta property="og:url" content="<?php echo base_url(); ?>" />
+    <meta property="og:url" content="<?php echo my_base_url(); ?>" />
 
     <meta property="og:description" content="" />
         
@@ -61,7 +61,7 @@
     <?php echo $content_css; ?>
 
     <script type="text/javascript">
-        APP_BASE_URL = '<?php echo base_url(); ?>';
+        APP_BASE_URL = '<?php echo my_base_url(); ?>';
     </script>
 
     <script src="<?php echo base_url('themes/common/js');?>/jsconfig.js"></script>

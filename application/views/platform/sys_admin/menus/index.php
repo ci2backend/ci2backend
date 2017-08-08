@@ -66,13 +66,13 @@
 
         			                        <td>
 
-        			                            <a class="delete_user confirmation" data-id="<?php echo $menu['id']; ?>" href="<?php echo base_url('auth/delete_user/'.$menu['id']);?>">
+        			                            <a class="delete_user confirmation" data-id="<?php echo $menu['id']; ?>" href="<?php echo my_base_url('auth/delete_user/'.$menu['id']);?>">
 
         			                            	<img src="<?php echo base_url(TEMPLATE_PATH.@$template);?>/img/cross-on-white.gif" width="16" height="16" alt="published" />
 
         			                            </a>
 
-        			                            <a href="<?php echo base_url('menu/edit').'/'.$menu['id'];?>">
+        			                            <a href="<?php echo my_base_url('menu/edit').'/'.$menu['id'];?>">
 
         			                            	<img src="<?php echo base_url(TEMPLATE_PATH.@$template);?>/img/pencil.gif" width="16" height="16" alt="edit" />
 

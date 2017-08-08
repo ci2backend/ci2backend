@@ -21,7 +21,7 @@
         
         <script type="text/javascript">
 
-            APP_BASE_URL = "<?php echo base_url(); ?>";
+            APP_BASE_URL = "<?php echo my_base_url(); ?>";
 
         </script>
         
@@ -65,7 +65,7 @@
         
                                     </a>
 
-                                    <a href="<?php echo base_url('profile.html'); ?>" class="link icon-user">
+                                    <a href="<?php echo my_base_url('profile.html'); ?>" class="link icon-user">
         
                                         <?php echo $user['first_name'].' '.$user['last_name']; ?>
         
@@ -87,7 +87,7 @@
                                 }
                                 ?>
                                 
-                                <a href="<?php echo base_url(); ?>" class="link icon-left-site">
+                                <a href="<?php echo my_base_url(); ?>" class="link icon-left-site">
         
                                     <?php echo $this->lang->line('visit_site'); ?>
     

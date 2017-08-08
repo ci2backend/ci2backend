@@ -998,3 +998,21 @@ if (!function_exists('_Rmdir')) {
 	}
 
 }
+
+if (!function_exists('my_base_url')) {
+
+	function my_base_url($param = '') {
+
+		if (is_rewrite_mode()) {
+			
+			return base_url($param);
+
+		} else {
+
+			return site_url($param);
+
+		}
+
+	}
+
+}
