@@ -72,11 +72,11 @@
 
                                         <td>
                                             <?php if ($user['active'] == 0): ?>
-                                                <a href="<?php echo base_url('auth/activate').'/'.$user['id'].'/'.$user['activation_code'];?>">
+                                                <a href="<?php echo my_base_url('auth/activate').'/'.$user['id'].'/'.$user['activation_code'];?>">
                                                     Active
                                                 </a>
                                             <?php else: ?>
-                                                <a href="<?php echo base_url('auth/deactivate').'/'.$user['id'];?>">
+                                                <a href="<?php echo my_base_url('auth/deactivate').'/'.$user['id'];?>">
                                                     Deactive
                                                 </a>
                                             <?php endif ?>
@@ -89,7 +89,7 @@
                                                 $dataAction = array(
                                                     'update' => array(
                                                         'class' => 'update_action',
-                                                        'href' => base_url('auth/edit_user').'/'.$user['id'],
+                                                        'href' => my_base_url('auth/edit_user').'/'.$user['id'],
                                                         'target' => '',
                                                         'title' => '',
                                                         'data-original-title' => '',
@@ -103,7 +103,7 @@
 
                                                     $dataAction['delete'] = array(
                                                         'class' => 'delete_action confirmation delete_user',
-                                                        'href' => base_url('users/delete/'.base64_encode($user['id'])),
+                                                        'href' => my_base_url('users/delete/'.base64_encode($user['id'])),
                                                         'target' => '',
                                                         'title' => '',
                                                         'data-original-title' => '',

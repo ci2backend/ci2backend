@@ -1,6 +1,6 @@
 <a class="dashboard-module" href="<?php
 	if (strpos($menu['action'], '.html') >= 0) {
-		echo base_url($menu['action']);
+		echo my_base_url($menu['action']);
 	}
 	else{
 		echo site_url($menu['action']);

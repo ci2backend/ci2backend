@@ -63,6 +63,18 @@
 
 						<?php
 
+						if (detectCGI()) {
+							
+							?>
+
+							<strong>You are using CGI PHP. Please create .htaccess file in root directory with content below:</strong>
+
+							<pre>&lt;IfModule mod_rewrite.c&gt;<br>&nbsp;RewriteEngine on<br>&nbsp;RewriteCond %{REQUEST_FILENAME} !-f<br>&nbsp;RewriteCond %{REQUEST_FILENAME} !-d<br>&nbsp;RewriteRule ^(.*)$ index.php/$1 [L,QSA]<br>&lt;/IfModule&gt;</pre>
+
+							<?php
+
+						} else {
+
 							$enabledPhpModule = apache_get_modules();
 
 							$modRewrite = in_array('mod_rewrite', $enabledPhpModule);
@@ -72,7 +84,7 @@
 								array(
 									'type' => 'version',
 									'name' => phpversion(), 
-									'value' => version_compare(phpversion(),'5.1.6'), 
+									'value' => version_compare(phpversion(), '5.1.6'), 
 								),
 								// check PHP required modules
 								array(
@@ -98,6 +110,11 @@
 								//check folder permission
 								array(
 									'type' => 'directory',
+									'name' => 'root', 
+									'value' => is_writable('./'), 
+								),
+								array(
+									'type' => 'directory',
 									'name' => '/temp', 
 									'value' => is_writable('./temp'), 
 								),
@@ -105,6 +122,11 @@
 									'type' => 'directory',
 									'name' => '/database', 
 									'value' => is_writable('./database'), 
+								),
+								array(
+									'type' => 'directory',
+									'name' => '/application/config', 
+									'value' => is_writable('./application/config'), 
 								)
 							);
 
@@ -149,6 +171,8 @@
 								}
 
 							}
+
+						}
 
 						?>
 
@@ -203,20 +227,30 @@
 
 						 				<?php 
 
-						 					if (!$modRewrite) {
+						 					if (isset($modRewrite) && !$modRewrite) {
 
 						 						echo '<p class="text-danger"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>mod_rewrite</strong> module needs to be enabled to use these options below</p>';
 
 						 					}
 
+						 					if (detectCGI()) {
+						 						
+						 						$checkModRewrite = true;
+
+						 					} else {
+						 						
+						 						$checkModRewrite = false;
+
+						 					}
+
 						 				?>
 						 				
-						 				<fieldset <?php echo $modRewrite ? '' : 'disabled'; ?> >
+						 				<fieldset <?php echo (isset($modRewrite) && $modRewrite) ? '' : 'disabled'; ?>>
 						 					
 									 		<div class="form-group">
 									 			<div class="checkbox">
 									 				<label>
-									 					<input type="checkbox" name="global[htaccess][value]" value="1">
+									 					<input type="checkbox" name="global[htaccess][value]" value="1" <?php echo $checkModRewrite ? 'checked disabled' : ''; ?>>
 									 					Enable .htaccess
 									 				</label>
 									 			</div>
@@ -271,10 +305,10 @@
 									 			<label for="">Database name: </label>
 									 			<input type="text" name="db[default][database]" value="<?php echo @$db['default']['database']; ?>" class="form-control" id="" placeholder="Enter database name">
 									 		</div>
-
+									 		
 									 		<div class="form-group">
-									 			<label for="">Database prefix: </label>
-									 			<input type="text" name="db[default][dbprefix]" value="<?php echo @$db['default']['dbprefix']; ?>" class="form-control" id="" placeholder="Enter database prefix">
+									 			<label for="">Port: </label>
+									 			<input type="text" name="db[default][port]" value="<?php echo isset($db['default']['port']) ? $db['default']['port'] : 3306; ?>" class="form-control" id="" placeholder="Enter port">
 									 		</div>
 
 								 		</div>

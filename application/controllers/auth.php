@@ -61,11 +61,19 @@ class Auth extends MY_Controller
                 //redirect them back to the home page
                 flash_success($this->ion_auth->messages());
 
-                if ($this->get_referrer() != null) {
+                $data_user = $this->ion_auth->user()->row_array();
 
-                    var_dump($this->get_referrer());
+                if ($data_user['first_login'] == 1) {
 
-                    $this->referrer();
+                    $this->ion_auth->update($data_user['id'], array('first_login' => 0));
+
+                } else {
+
+                    if ($this->get_current_url() != null) {
+
+                        $this->redirect_current();
+
+                    }
 
                 }
 

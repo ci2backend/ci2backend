@@ -354,7 +354,7 @@ class Views extends MY_Controller
 
 							$new_path = $this->response->file_path;
 
-							$this->response->redirect = base_url('views/edit').SLASH.$new_path.SLASH.$view_id;
+							$this->response->redirect = my_base_url('views/edit').SLASH.$new_path.SLASH.$view_id;
 
                         } else {
 

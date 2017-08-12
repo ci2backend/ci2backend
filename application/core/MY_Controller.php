@@ -2653,9 +2653,9 @@ class MY_Controller extends CI_Controller {
     public function referrer()
     {
 
-        if( $this->session->userdata('redirect_back') ) {
+        $redirect_url = $this->get_referrer();
 
-            $redirect_url = $this->session->userdata('redirect_back');
+        if ($redirect_url) {
             
             $this->session->unset_userdata('redirect_back');
 
@@ -2675,7 +2675,7 @@ class MY_Controller extends CI_Controller {
     public function set_referrer()
     {
 
-        if (strpos($this->uri->uri_string, 'install.php' !== false)) {
+        if (strpos($this->agent->referrer(), 'install.php') !== false) {
 
             return true;
 
@@ -2695,6 +2695,35 @@ class MY_Controller extends CI_Controller {
 
             // save the redirect_back data from referral url (where user first was prior to login)
             $this->session->set_userdata('redirect_back', $this->agent->referrer());
+            
+            // Save the current url to Session
+            $this->set_current_url();
+
+        }
+
+    }
+
+    public function set_current_url() {
+        
+        $this->session->set_userdata('current_url', current_url());
+        
+    }
+
+    public function get_current_url() {
+        
+        return $this->session->userdata('current_url');
+
+    }
+
+    public function redirect_current() {
+
+        $url_redirect = $this->get_current_url();
+
+        if ($url_redirect) {
+            
+            $this->session->unset_userdata('current_url');
+
+            $this->redirect($url_redirect);
 
         }
 

@@ -216,7 +216,7 @@ INSERT INTO `menus` (`id`, `title_key`, `action_router`, `icon`, `description`, 
 (1, 'Dashboard', 'dev/index', NULL, 'Manage all module in the system', 1, 0, '2017-06-13 08:15:34', '2017-06-13 08:15:34'),
 (2, 'Views', 'views/index', NULL, 'Manage page in the system', 1, 0, '2017-06-13 08:15:34', '2017-06-13 08:15:34'),
 (3, 'Controllers', 'controllers/index', NULL, 'Manage all controller in the sysytem', 1, 0, '2017-06-13 08:15:34', '2017-06-13 08:15:34'),
-(4, 'MyQuery', 'models/index', NULL, 'Manage all model in the sysytem', 1, 0, '2017-06-13 08:15:34', '2017-06-13 08:15:34'),
+(4, 'MyQueries', 'models/index', NULL, 'Manage all model in the sysytem', 1, 0, '2017-06-13 08:15:34', '2017-06-13 08:15:34'),
 (5, 'Languages', 'languages/index', NULL, 'Manage all language in the sysytem', 1, 0, '2017-06-13 08:15:34', '2017-06-13 08:15:34'),
 (6, 'Databases', 'databases/index', NULL, 'Manage all database in the sysytem', 1, 0, '2017-06-13 08:15:34', '2017-06-13 08:15:34'),
 (7, 'Users', 'users/index', NULL, 'Manage all user in the sysytem', 1, 0, '2017-06-13 08:15:34', '2017-06-13 08:15:34'),
@@ -250,7 +250,7 @@ CREATE TABLE IF NOT EXISTS `modules` (
 INSERT INTO `modules` (`id`, `title_key`, `action`, `is_show`, `icon`, `description`) VALUES
 (1, 'Views', 'views/index', 1, 'modules/manage_view.png', 'Manage View'),
 (2, 'Controllers', 'controllers/index', 1, 'modules/manage_controller.png', 'Manage Controller'),
-(3, 'MyQuery', 'models/index', 1, 'modules/manage_model.png', 'Manage Model'),
+(3, 'MyQueries', 'models/index', 1, 'modules/manage_model.png', 'Manage Model'),
 (4, 'Languages', 'languages/index', 1, 'modules/manage_language.png', 'Manage Language'),
 (5, 'Databases', 'databases/index', 1, 'modules/manage_database.png', 'Manage Database'),
 (6, 'Users', 'users/index', 1, 'modules/manage_user.png', 'Manage User'),
@@ -545,6 +545,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `remember_code` varchar(40) DEFAULT NULL,
   `created_on` int(11) UNSIGNED NOT NULL,
   `last_login` int(11) UNSIGNED DEFAULT NULL,
+  `first_login` tinyint(1) NOT NULL DEFAULT '1',
   `active` tinyint(1) UNSIGNED DEFAULT NULL,
   `first_name` varchar(50) DEFAULT NULL,
   `last_name` varchar(50) DEFAULT NULL,
@@ -558,8 +559,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `first_name`, `last_name`, `company`, `phone`, `lang_folder`) VALUES
-(1, '127.0.0.1', 'administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, 1268889823, 1, 'Admin', 'istrator', 'ADMIN', '0', 'english');
+INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `first_login`, `active`, `first_name`, `last_name`, `company`, `phone`, `lang_folder`) VALUES
+(1, '127.0.0.1', 'administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '', NULL, NULL, NULL, 1268889823, NULL, 1, 1, 'Admin', 'istrator', 'ADMIN', '0', 'english');
 
 -- --------------------------------------------------------
 
@@ -1224,14 +1225,14 @@ INSERT INTO `access_right_groups` (`id`, `access_right_id`, `group_id`, `enable`
 (116, 39, 2, 0),
 (117, 39, 3, 0),
 (118, 40, 1, 1),
-(119, 40, 2, 1),
-(120, 40, 3, 1),
+(119, 40, 2, 0),
+(120, 40, 3, 0),
 (121, 41, 1, 1),
-(122, 41, 2, 1),
-(123, 41, 3, 1),
+(122, 41, 2, 0),
+(123, 41, 3, 0),
 (124, 42, 1, 1),
-(125, 42, 2, 1),
-(126, 42, 3, 1),
+(125, 42, 2, 0),
+(126, 42, 3, 0),
 (127, 43, 1, 1),
 (128, 43, 2, 0),
 (129, 43, 3, 0),
@@ -1329,11 +1330,11 @@ INSERT INTO `access_right_groups` (`id`, `access_right_id`, `group_id`, `enable`
 (221, 74, 2, 0),
 (222, 74, 3, 0),
 (223, 75, 1, 1),
-(224, 75, 2, 0),
-(225, 75, 3, 0),
+(224, 75, 2, 1),
+(225, 75, 3, 1),
 (226, 76, 1, 1),
-(227, 76, 2, 1),
-(228, 76, 3, 1),
+(227, 76, 2, 0),
+(228, 76, 3, 0),
 (229, 77, 1, 1),
 (230, 77, 2, 0),
 (231, 77, 3, 0),
@@ -1536,11 +1537,8 @@ INSERT INTO `access_right_groups` (`id`, `access_right_id`, `group_id`, `enable`
 (428, 143, 2, 0),
 (429, 143, 3, 0),
 (430, 144, 1, 1),
-(431, 144, 2, 0),
-(432, 144, 3, 0),
-(433, 145, 1, 1),
-(434, 145, 2, 1),
-(435, 145, 3, 1);
+(431, 144, 2, 1),
+(432, 144, 3, 1);
 --
 -- Constraints for dumped tables
 --

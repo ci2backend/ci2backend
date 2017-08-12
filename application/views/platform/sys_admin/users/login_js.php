@@ -1,6 +1,6 @@
 <script type="text/javascript">
 $(window).on('load', function () {
-	$.ajax({url: APP_BASE_URL + 'users/check_expired_session'});
+	$.ajax({url: APP_BASE_URL + 'index.php/users/check_expired_session'});
 });
 $(document).ready(function () {
 

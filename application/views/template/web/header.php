@@ -10,7 +10,7 @@
 
     <meta property="og:type" content="article" />
 
-    <meta property="og:url" content="<?php echo base_url(); ?>" />
+    <meta property="og:url" content="<?php echo my_base_url(); ?>" />
 
     <meta property="og:description" content="" />
         
@@ -57,11 +57,11 @@
                     <li><a href="#">About</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="<?php echo base_url('admin.html'); ?>">Admin panel</a></li>
+                    <li><a href="<?php echo my_base_url('admin.html'); ?>">Admin panel</a></li>
                     <?php if (!$this->ion_auth->logged_in()): ?>
-                        <li><a href="<?php echo base_url('login.html'); ?>">Login</a></li>
+                        <li><a href="<?php echo my_base_url('login.html'); ?>">Login</a></li>
                     <?php else: ?>
-                        <li><a href="<?php echo base_url('logout.html'); ?>">Logout</a></li>
+                        <li><a href="<?php echo my_base_url('logout.html'); ?>">Logout</a></li>
                     <?php endif ?>
                 </ul>
             </div><!-- /.navbar-collapse -->

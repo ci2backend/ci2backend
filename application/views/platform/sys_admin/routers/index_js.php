@@ -6,7 +6,7 @@ $(document).ready(function () {
 	});
 
 	$('select.onchange_this').change(function (event) {
-		window.location.href = APP_BASE_URL + 'routers/index/' + this.value;
+		window.location.href = APP_BASE_URL + 'index.php/routers/index/' + this.value;
 	});
 
 	$(document).on('change', 'select.router-select', function (event) {

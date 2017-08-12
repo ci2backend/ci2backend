@@ -39,7 +39,7 @@ $(document).ready(function () {
 		if ($(this).is(':checked')) {
 			require_login = 1;
 		};
-		xhr['url'] = APP_BASE_URL + 'users/set_require_login';
+		xhr['url'] = APP_BASE_URL + 'index.php/users/set_require_login';
 		xhr['data'] = 'require_login='+ require_login +'&access_right_id=' + $(this).val();
 		xhr['silent'] = true;
 		var result = ajax_loader(xhr);
@@ -57,7 +57,7 @@ $(document).ready(function () {
 			groups: checker_val,
 			access_right_id: access_right_id
 		};
-		xhr['url'] = APP_BASE_URL + 'users/enable_access_right';
+		xhr['url'] = APP_BASE_URL + 'index.php/users/enable_access_right';
 		xhr['data'] = $.param(data);
 		xhr['silent'] = true;
 		var result = ajax_loader(xhr);

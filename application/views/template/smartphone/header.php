@@ -10,7 +10,7 @@
 
     <meta property="og:type" content="article" />
 
-    <meta property="og:url" content="<?php echo base_url(); ?>" />
+    <meta property="og:url" content="<?php echo my_base_url(); ?>" />
 
     <meta property="og:description" content="" />
         

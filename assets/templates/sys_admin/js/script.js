@@ -113,7 +113,7 @@ $(document).ready(function() {
     $(document).on('click', 'a[data-toggle="tab"]', function(event) {
         var target = $(this).data('target');
         if (target) {
-            var url = APP_BASE_URL + target.replace('#', '') + '.html';
+            var url = APP_BASE_URL + 'index.php/' + target.replace('#', '') + '.html';
             var html = $('html')[0].innerHTML;
             window.history.pushState({
                 html: html,
@@ -263,7 +263,7 @@ function delete_action(event) {
         };
         if (data) {
             var ajx = Array();
-            ajx['url'] = APP_BASE_URL + 'dev/delete';
+            ajx['url'] = APP_BASE_URL + 'index.php/dev/delete';
             ajx['data'] = serialize(data);
             ajx['async'] = false;
             ajx['callback'] = deleteSubmitCallback;
@@ -385,7 +385,7 @@ function formValidation() {
                 constant: {
                     required: true,
                     remote: {
-                        url: APP_BASE_URL + "my_constants/checkConstantExist",
+                        url: APP_BASE_URL + "index.php/my_constants/checkConstantExist",
                         type: "POST"
                     },
                     maxlength: 100

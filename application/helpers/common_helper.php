@@ -238,7 +238,7 @@ if ( ! function_exists('form_ajax')) {
 
 		}
 
-		if (in_array('mod_rewrite', apache_get_modules())) {
+		if (is_rewrite_mode()) {
 
 			$ajax_action = $CI->config->base_url('ajax.html');
 
@@ -256,7 +256,7 @@ if ( ! function_exists('form_ajax')) {
 
 			$action = $CI->config->site_url($action);
 
-			if (in_array('mod_rewrite', apache_get_modules())) {
+			if (is_rewrite_mode()) {
 
 				$action = $CI->config->base_url($action);
 
@@ -995,6 +995,24 @@ if (!function_exists('_Rmdir')) {
 	    
 	    rmdir($dir);
 	    
+	}
+
+}
+
+if (!function_exists('my_base_url')) {
+
+	function my_base_url($param = '') {
+
+		if (is_rewrite_mode()) {
+			
+			return base_url($param);
+
+		} else {
+
+			return site_url($param);
+
+		}
+
 	}
 
 }

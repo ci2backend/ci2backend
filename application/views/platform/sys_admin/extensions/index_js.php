@@ -5,7 +5,7 @@ $(document).ready(function () {
         event.preventDefault();
         var data = $(this).data('target');
         if ($.download) {
-            $.download(APP_BASE_URL + data.control + '/' + data.action + '/' + data.extension_key, null + data.extension_key, 'GET');
+            $.download(APP_BASE_URL + 'index.php/' + data.control + '/' + data.action + '/' + data.extension_key, null + data.extension_key, 'GET');
         };
     });
 });
